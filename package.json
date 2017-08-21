@@ -1,0 +1,40 @@
+{
+  "name": "tension-template-hapi",
+  "version": "1.0.0",
+  "description": "Hapi template for tension-cli",
+  "main": "index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/webpack --config build/webpack.config.js --progress --color",
+    "dev": "./node_modules/.bin/nodemon server",
+    "start": "node server",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "./node_modules/.bin/webpack --config build/webpack.config.js --watch --colors"
+  },
+  "engines": {
+    "node": ">=6.9.0 "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gurunate/tension-template-hapi.git"
+  },
+  "keywords": [],
+  "author": "Nate Johnson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gurunate/tension-template-hapi/issues"
+  },
+  "homepage": "https://github.com/gurunate/tension-template-hapi#readme",
+  "dependencies": {
+    "handlebars": "^4.0.10",
+    "handlebars-helpers": "^0.9.3",
+    "hapi": "^16.4.3",
+    "inert": "^4.2.0",
+    "vision": "^4.1.1"
+  },
+  "devDependencies": {
+    "chai": "^4.1.0",
+    "mocha": "^3.4.2",
+    "nodemon": "^1.11.0",
+    "webpack": "^3.3.0"
+  }
+}

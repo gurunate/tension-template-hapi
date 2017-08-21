@@ -1,0 +1,11 @@
+[development]
+title = Hapi Template [dev]
+port = 19848
+
+[test]
+title = Hapi Template [test]
+port = 19848
+
+[production]
+title = Hapi Template
+port = 19848
