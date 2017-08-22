@@ -1,12 +1,8 @@
 'use strict';
 
+const handlers = require('../handlers');
+
 module.exports = [{
-    method: 'GET',
-    path: '/',
-    handler: (request, reply) => {
-        reply.view('home', {});
-    }
-}, {
     method: 'GET',
     path: '/assets/{param*}',
     config: {
@@ -19,4 +15,12 @@ module.exports = [{
             index: true
         }
     }
+}, {
+    method: 'GET',
+    path: '/',
+    handler: handlers.home
+}, {
+    method: 'GET',
+    path: '/about',
+    handler: handlers.about
 }];
