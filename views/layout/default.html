@@ -7,15 +7,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ title }}</title>
 
+    <link rel="stylesheet" href="/assets/css/styles.css">
     <script src="/assets/bundle.js"></script>
 </head>
 <body>
 
+<div class="container">
     {{> header }}
 
     {{{ content }}}
 
     {{> footer }}
+</div>
 
 </body>
 </html>

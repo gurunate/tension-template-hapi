@@ -4,7 +4,7 @@
   "description": "Hapi template for tension-cli",
   "main": "index.js",
   "scripts": {
-    "build": "./node_modules/.bin/webpack --config build/webpack.config.js --progress --color",
+    "build": "./node_modules/.bin/webpack -p --config build/webpack.config.js --progress --color",
     "dev": "./node_modules/.bin/nodemon server",
     "start": "node server",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -25,16 +25,31 @@
   },
   "homepage": "https://github.com/gurunate/tension-template-hapi#readme",
   "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "bootstrap": "^3.3.7",
     "handlebars": "^4.0.10",
     "handlebars-helpers": "^0.9.3",
     "hapi": "^16.4.3",
     "inert": "^4.2.0",
-    "vision": "^4.1.1"
+    "jquery": "^3.2.1",
+    "vision": "^4.1.1",
+    "vue": "^2.4.2",
+    "vuex": "^2.3.1"
   },
   "devDependencies": {
+    "autoprefixer": "^7.1.2",
     "chai": "^4.1.0",
+    "css-loader": "^0.28.5",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "file-loader": "^0.11.2",
     "mocha": "^3.4.2",
+    "node-sass": "^4.5.3",
     "nodemon": "^1.11.0",
+    "postcss-loader": "^2.0.6",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "url-loader": "^0.5.9",
     "webpack": "^3.3.0"
   }
 }
