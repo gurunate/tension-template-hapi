@@ -8,7 +8,7 @@ module.exports = {
         let context = {
             title: epithet.choose(' '),
             message: loremIpsum({
-                count: 5,
+                count: 10,
                 units: 'paragraphs',
                 format: 'html'
             })
@@ -18,5 +18,8 @@ module.exports = {
     },
     about: (request, reply) => {
         reply.view('about');
+    },
+    logout: (request, reply) => {
+        reply.redirect('/');
     }
 };

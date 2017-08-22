@@ -23,4 +23,8 @@ module.exports = [{
     method: 'GET',
     path: '/about',
     handler: handlers.about
+}, {
+    method: 'GET',
+    path: '/logout',
+    handler: handlers.logout
 }];

@@ -9,7 +9,6 @@ module.exports = {
     entry: [
         'bootstrap',
         'bootstrap/dist/css/bootstrap.css',
-        // 'bootstrap/dist/css/bootstrap-theme.css',
         'bootswatch/simplex/bootstrap.min.css',
         './client/css/styles.scss',
         './client/js/main.js',
